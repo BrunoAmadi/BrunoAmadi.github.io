@@ -1,0 +1,112 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0px 100px;
+}
+.experiencia .subtitulo {
+  color: rgba(0, 0, 0, 0.2);
+  grid-row: 1/5;
+}
+.experiencia-texto {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #525252;
+  max-width: 40ch;
+  margin-bottom: px;
+  
+}
+.experiencia-texto strong {
+  color: #141414;
+}
+.experiencia-descricao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.experiencia-ano {
+  position: absolute;
+  left: -100px;
+  top: 21px;
+  font-size: 0.875rem;
+  width: 80px;
+  text-align: end;
+}
+.experiencia-descricao h3::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 20px;
+  background-image: linear-gradient(#00ff00, #adff2f);
+  position: absolute;
+  left: -5px;
+}
+
+.experiencia-sobre {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.experiencia-titulo {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.experiencia-flebox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+  padding: 10px;
+}
+.experiencia-flebox li {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.experiencia-conhecimento {
+  margin-bottom: 60px;
+}
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+    font-size: 3.5rem;
+    word-break: normal;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .experiencia-ano {
+    position: initial;
+    order: 1;
+    text-align: left;
+    width: initial;
+    padding: 10px;
+  }
+  .experiencia-ano::before {
+    content: "Ano:";
+  }
+}
+@media (max-width: 400px) {
+  .experiencia-descricao {
+    grid-template-columns: 1fr;
+  }
+  .experiencia .subtitulo{
+    font-size: 2.5rem;
+  }
+}

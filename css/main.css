@@ -1,0 +1,70 @@
+.principal {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+
+}
+.conteudo {
+  align-self: center;
+  margin: 0px;
+  padding: 40px;
+  display: grid;
+  position: relative;
+}
+
+.conteudo h1 {
+ margin: 0px;
+  padding: 0px;
+  font-size: 4.75rem;
+  line-height: 1.125;
+}
+.conteudo p {
+  margin: 0px;
+  font-size: 1.5rem;
+  color: #525252;
+  margin-top: 40px;
+}
+.principal h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 110px;
+  background-image: url("../img/detalhe.svg");
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: -1;
+}
+@media(max-width: 1050px){
+  .principal h1{
+    font-size: 3rem;
+  }
+  .principal h1::before{
+    width: 130px;
+    height: 110px;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: -5px;
+  }
+}
+@media(max-width: 800px){
+  .principal{
+    grid-template-columns: 1fr 1fr;
+  gap:40px;
+  font-size: 1rem;
+  }
+  .foto-perfil{
+    width:600px;
+  }
+}
+@media(max-width: 600px){
+  .principal{
+    grid-template-columns: 1fr;
+  }
+  .foto-perfil{
+    width: 200px;
+  }
+}

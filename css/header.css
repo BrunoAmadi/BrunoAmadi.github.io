@@ -1,0 +1,27 @@
+.header {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  place-items: center;
+
+
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.header-menu a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
